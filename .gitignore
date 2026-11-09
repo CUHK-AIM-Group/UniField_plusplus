@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+weights/**
+!weights/manifest.json
+cache/
+data/
+runs/
+/work/
+third_party/
+*.log
+*.pth
+*.ckpt
+*.safetensors
+*.nii
+*.nii.gz

@@ -1,0 +1,111 @@
+##############################################
+# WanVSR loop-token training config
+#
+# Default behavior:
+# - Phase 2 style training with VLM diagnosis/planning.
+# - Load and continue the Stage-1 LoRA checkpoint directly.
+# - Loop the selected DiT block range twice.
+# - Extra loop passes are applied only to VLM/atlas masked tokens.
+##############################################
+
+data:
+  train_list: data/train.csv
+  val_list: data/val.csv
+  task_type: 64mT_to_3T
+  height: 256
+  width: 256
+  num_frames: 40
+  use_monai: true
+  monai_spatial_size: [256, 256, 160]
+
+model:
+  dit_path: weights/FlashVSR/diffusion_pytorch_model_streaming_dmd.safetensors
+  vae_path: weights/FlashVSR/Wan2.1_VAE.pth
+  text_encoder_path: weights/FlashVSR/models_t5_umt5-xxl-enc-bf16.pth
+  lq_proj_path: weights/FlashVSR/LQ_proj_in.ckpt
+  tcdecoder_path: weights/FlashVSR/TCDecoder.ckpt
+
+training:
+  num_epochs: 1000
+  batch_size: 1
+  learning_rate: 1.0e-4
+  min_lr: 1.0e-6
+  weight_decay: 0.01
+  warmup_epochs: 5
+  max_grad_norm: 1.0
+  use_amp: true
+  val_every: 5
+  validate_before_train: false
+  validate_before_train_save_images: true
+  save_every: 5
+
+lora:
+  rank: 128
+  alpha: 128
+  target_modules: "q,k,v,o,ffn.0,ffn.2"
+
+pipeline:
+  enable_stage2: true
+  enable_stage3: true
+  max_refinement_iterations: 1
+  stage3_timestep_max: 50.0
+  stage3_tau_small_prob: 0.8
+  # vLLM serves the base model with the tuned LLaMA-Factory LoRA adapter enabled.
+  # Requests use vlm_model_name, which is the LoRA module alias below.
+  vlm_model_name: unifield-planner
+  vlm_base_model_name: Qwen/Qwen3.5-9B
+  vlm_lora_name: unifield-planner
+  vlm_lora_path: weights/planner_lora
+  use_vlm: true
+  use_bidirectional: true
+  gpu: "0,1"              # cuda:0=DiT/training (physical 0), cuda:1=VLM (physical 1)
+  vlm_device: "cuda:1"
+
+inference:
+  topk_ratio: 2.0
+  kv_ratio: 3.0
+  local_range: 9
+
+output:
+  output_dir: runs/main
+  num_workers: 4
+  gpu_retry_wait_seconds: 300
+  gpu_retry_max_retries: 12
+
+phase:
+  phase: 2
+  stage1_ckpt: weights/stage1/
+  stage3_lr: 5.0e-5
+  mask_loss_weight: 5.0
+  ssim_loss_weight: 1.0
+  grad_loss_weight: 1.0
+  ssim_kernel: 5
+
+resume:
+  resume_from:
+
+loop:
+  # LoopFormer-style budget M.  M=2 means one normal pass plus one extra pass.
+  loop_iterations: 2
+
+  # DiT block range to loop.  The current Tiny DiT has code blocks 0..29.
+  # Human layer numbers 1..20 correspond to code blocks 0..19.
+  loop_block_start: 0
+  loop_block_end: 19
+
+  # Atlas masks are soft.  Values below this threshold do not get extra depth.
+  loop_mask_threshold: 0.05
+
+  # True: extra loop depth is blended only into VLM/atlas masked tokens.
+  # False: the selected block range loops for all tokens.
+  loop_apply_to_masked_tokens: true
+
+  # Keep the loaded Stage-1 LoRA adapter and continue training it.
+  # False restores the old 3-stage behavior: merge Stage-1 LoRA then reinit a new LoRA.
+  continue_stage1_lora: true
+
+  # Source workflow directory for the tuned LLaMA-Factory LoRA above.
+  vlm_finetune_dir: weights/planner_lora
+
+  # Reserved for lightweight logging hooks.
+  loop_debug_every: 25

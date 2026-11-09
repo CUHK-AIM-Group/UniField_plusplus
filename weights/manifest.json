@@ -1,0 +1,334 @@
+{
+  "weights/FlashVSR/LQ_proj_in.ckpt": {
+    "sha256": "7ad76b2cc682d72e9521c5fa6bf15850c974c8aff9a04c92882b49c0517ffb94",
+    "bytes": 575695268,
+    "source": {
+      "type": "huggingface",
+      "repo": "JunhaoZhuang/FlashVSR",
+      "revision": "e66dcfc0e155367370871f6e59fd0805b16093e1",
+      "filename": "LQ_proj_in.ckpt"
+    }
+  },
+  "weights/FlashVSR/TCDecoder.ckpt": {
+    "sha256": "e224bdcf2f52745cbf4d393ff5374c2ba09e90285d5d19062d2bf63b915b6161",
+    "bytes": 189018333,
+    "source": {
+      "type": "huggingface",
+      "repo": "JunhaoZhuang/FlashVSR",
+      "revision": "e66dcfc0e155367370871f6e59fd0805b16093e1",
+      "filename": "TCDecoder.ckpt"
+    }
+  },
+  "weights/FlashVSR/Wan2.1_VAE.pth": {
+    "sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+    "bytes": 507609880,
+    "source": {
+      "type": "huggingface",
+      "repo": "JunhaoZhuang/FlashVSR",
+      "revision": "e66dcfc0e155367370871f6e59fd0805b16093e1",
+      "filename": "Wan2.1_VAE.pth"
+    }
+  },
+  "weights/FlashVSR/diffusion_pytorch_model_streaming_dmd.safetensors": {
+    "sha256": "b05be65078a22000d8efdb6ce212133fd043255371c015329e9f3d31645c62c5",
+    "bytes": 5676070392,
+    "source": {
+      "type": "huggingface",
+      "repo": "JunhaoZhuang/FlashVSR",
+      "revision": "e66dcfc0e155367370871f6e59fd0805b16093e1",
+      "filename": "diffusion_pytorch_model_streaming_dmd.safetensors"
+    }
+  },
+  "weights/FlashVSR/google/umt5-xxl/special_tokens_map.json": {
+    "sha256": "7b8a9f5040adb67b5805abdfd42c1f8d0f3d0e711f10726580eb3789cd0ad61d",
+    "bytes": 6623,
+    "source": {
+      "type": "huggingface",
+      "repo": "Wan-AI/Wan2.1-T2V-1.3B",
+      "revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+      "filename": "google/umt5-xxl/special_tokens_map.json"
+    }
+  },
+  "weights/FlashVSR/google/umt5-xxl/spiece.model": {
+    "sha256": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458",
+    "bytes": 4548313,
+    "source": {
+      "type": "huggingface",
+      "repo": "Wan-AI/Wan2.1-T2V-1.3B",
+      "revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+      "filename": "google/umt5-xxl/spiece.model"
+    }
+  },
+  "weights/FlashVSR/google/umt5-xxl/tokenizer.json": {
+    "sha256": "6e197b4d3dbd71da14b4eb255f4fa91c9c1f2068b20a2de2472967ca3d22602b",
+    "bytes": 16837417,
+    "source": {
+      "type": "huggingface",
+      "repo": "Wan-AI/Wan2.1-T2V-1.3B",
+      "revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+      "filename": "google/umt5-xxl/tokenizer.json"
+    }
+  },
+  "weights/FlashVSR/google/umt5-xxl/tokenizer_config.json": {
+    "sha256": "ed9a3a8b0faa71a70a32847e0435fe036e6e112d4df4edb7bb48a921e344dc05",
+    "bytes": 61728,
+    "source": {
+      "type": "huggingface",
+      "repo": "Wan-AI/Wan2.1-T2V-1.3B",
+      "revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+      "filename": "google/umt5-xxl/tokenizer_config.json"
+    }
+  },
+  "weights/FlashVSR/models_t5_umt5-xxl-enc-bf16.pth": {
+    "sha256": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+    "bytes": 11361920418,
+    "source": {
+      "type": "huggingface",
+      "repo": "Wan-AI/Wan2.1-T2V-1.3B",
+      "revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+      "filename": "models_t5_umt5-xxl-enc-bf16.pth"
+    }
+  },
+  "weights/Qwen3.5-9B/chat_template.jinja": {
+    "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "bytes": 7756,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "chat_template.jinja"
+    }
+  },
+  "weights/Qwen3.5-9B/config.json": {
+    "sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+    "bytes": 3126,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "config.json"
+    }
+  },
+  "weights/Qwen3.5-9B/merges.txt": {
+    "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+    "bytes": 3353259,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "merges.txt"
+    }
+  },
+  "weights/Qwen3.5-9B/model.safetensors-00001-of-00004.safetensors": {
+    "sha256": "db6f444b43d318c92f360a13a25561a6a65b10c0631b8ed305a426dbaa6c380e",
+    "bytes": 5276436216,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "model.safetensors-00001-of-00004.safetensors"
+    }
+  },
+  "weights/Qwen3.5-9B/model.safetensors-00002-of-00004.safetensors": {
+    "sha256": "31c7d7e2dd5d207840b31cc59083c8f4c4718959149e0358c0364052bb9a0330",
+    "bytes": 5335161512,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "model.safetensors-00002-of-00004.safetensors"
+    }
+  },
+  "weights/Qwen3.5-9B/model.safetensors-00003-of-00004.safetensors": {
+    "sha256": "7ec36ba3a4176a44c3c0876ad80c56a2f70c84bf008d82e9501df642f17dadec",
+    "bytes": 5368717440,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "model.safetensors-00003-of-00004.safetensors"
+    }
+  },
+  "weights/Qwen3.5-9B/model.safetensors-00004-of-00004.safetensors": {
+    "sha256": "b62b0c4cd7e44edee103ee8f4fe225f246d5e768e07bfd5f25b63a8aa1fdd0c6",
+    "bytes": 3325995712,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "model.safetensors-00004-of-00004.safetensors"
+    }
+  },
+  "weights/Qwen3.5-9B/model.safetensors.index.json": {
+    "sha256": "26d3539b516be613f39563617cb9d33b3f83d401298125be392c80cefb8f7fe5",
+    "bytes": 79657,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "model.safetensors.index.json"
+    }
+  },
+  "weights/Qwen3.5-9B/preprocessor_config.json": {
+    "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+    "bytes": 390,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "preprocessor_config.json"
+    }
+  },
+  "weights/Qwen3.5-9B/tokenizer.json": {
+    "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "bytes": 12807982,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "tokenizer.json"
+    }
+  },
+  "weights/Qwen3.5-9B/tokenizer_config.json": {
+    "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+    "bytes": 16710,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "tokenizer_config.json"
+    }
+  },
+  "weights/Qwen3.5-9B/video_preprocessor_config.json": {
+    "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+    "bytes": 385,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "video_preprocessor_config.json"
+    }
+  },
+  "weights/Qwen3.5-9B/vocab.json": {
+    "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+    "bytes": 6722759,
+    "source": {
+      "type": "huggingface",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "filename": "vocab.json"
+    }
+  },
+  "weights/atlas/HarvardOxford-cort-maxprob-thr25-1mm.nii.gz": {
+    "sha256": "109ab2c5b4958185ee061f75aa38c9afc37de273e0b2e02288f4ab12693b60d8",
+    "bytes": 146506,
+    "source": {
+      "type": "tar",
+      "url": "https://www.nitrc.org/frs/download.php/9902/HarvardOxford.tgz",
+      "member": "data/atlases/HarvardOxford/HarvardOxford-cort-maxprob-thr25-1mm.nii.gz"
+    }
+  },
+  "weights/atlas/HarvardOxford-sub-maxprob-thr25-1mm.nii.gz": {
+    "sha256": "b5b26dfbe147976021639d2f52d7e0c79a1fe6c46e840c8005251ec7f09fe149",
+    "bytes": 197724,
+    "source": {
+      "type": "tar",
+      "url": "https://www.nitrc.org/frs/download.php/9902/HarvardOxford.tgz",
+      "member": "data/atlases/HarvardOxford/HarvardOxford-sub-maxprob-thr25-1mm.nii.gz"
+    }
+  },
+  "weights/atlas/tpl-MNI152NLin6Asym_res-02_T1w.nii.gz": {
+    "sha256": "2a814da50173599a857d96246dc057d548072bd6dffa499f75724dbad20792b1",
+    "bytes": 1412252,
+    "source": {
+      "type": "url",
+      "url": "https://templateflow.s3.amazonaws.com/tpl-MNI152NLin6Asym/tpl-MNI152NLin6Asym_res-02_T1w.nii.gz"
+    }
+  },
+  "weights/atlas/tpl-MNI152NLin6Asym_res-02_desc-brain_mask.nii.gz": {
+    "sha256": "e4e2b284170271afdafe26ac0997b2af5a0f5ddac35e28a7e796b52e8bc5adb1",
+    "bytes": 28557,
+    "source": {
+      "type": "url",
+      "url": "https://templateflow.s3.amazonaws.com/tpl-MNI152NLin6Asym/tpl-MNI152NLin6Asym_res-02_desc-brain_mask.nii.gz"
+    }
+  },
+  "weights/metrics/checkpoints/alexnet-owt-7be5be79.pth": {
+    "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "bytes": 244408911,
+    "source": {
+      "type": "url",
+      "url": "https://download.pytorch.org/models/alexnet-owt-7be5be79.pth"
+    }
+  },
+  "weights/planner_lora/adapter_config.json": {
+    "sha256": "617849702ff1e837d942ecb554614cdd4661953b80384494bd92ab546e05ceb7",
+    "bytes": 1048,
+    "source": {
+      "type": "tar",
+      "url": "https://github.com/CUHK-AIM-Group/UniField_plusplus/releases/download/initialization-v1/planner-initialization.tar",
+      "member": "planner_lora/adapter_config.json",
+      "archive_sha256": "8cd8eb421f6507a30aeec4f8df8be9ed58b30ae9450029fa864b1f9c6014a006"
+    }
+  },
+  "weights/planner_lora/adapter_model.safetensors": {
+    "sha256": "73777dc01954691f3cf34ee9b4ad1f27df54f258f1d0a749ce2eb1d6953c9bc5",
+    "bytes": 29135296,
+    "source": {
+      "type": "tar",
+      "url": "https://github.com/CUHK-AIM-Group/UniField_plusplus/releases/download/initialization-v1/planner-initialization.tar",
+      "member": "planner_lora/adapter_model.safetensors",
+      "archive_sha256": "8cd8eb421f6507a30aeec4f8df8be9ed58b30ae9450029fa864b1f9c6014a006"
+    }
+  },
+  "weights/planner_lora/chat_template.jinja": {
+    "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "bytes": 7756,
+    "source": {
+      "type": "tar",
+      "url": "https://github.com/CUHK-AIM-Group/UniField_plusplus/releases/download/initialization-v1/planner-initialization.tar",
+      "member": "planner_lora/chat_template.jinja",
+      "archive_sha256": "8cd8eb421f6507a30aeec4f8df8be9ed58b30ae9450029fa864b1f9c6014a006"
+    }
+  },
+  "weights/planner_lora/processor_config.json": {
+    "sha256": "d89ef49ce9cd37fbf510158e13c1ef063d9286411c1ec9049932dbe0487143b1",
+    "bytes": 1191,
+    "source": {
+      "type": "tar",
+      "url": "https://github.com/CUHK-AIM-Group/UniField_plusplus/releases/download/initialization-v1/planner-initialization.tar",
+      "member": "planner_lora/processor_config.json",
+      "archive_sha256": "8cd8eb421f6507a30aeec4f8df8be9ed58b30ae9450029fa864b1f9c6014a006"
+    }
+  },
+  "weights/planner_lora/tokenizer.json": {
+    "sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+    "bytes": 19989325,
+    "source": {
+      "type": "tar",
+      "url": "https://github.com/CUHK-AIM-Group/UniField_plusplus/releases/download/initialization-v1/planner-initialization.tar",
+      "member": "planner_lora/tokenizer.json",
+      "archive_sha256": "8cd8eb421f6507a30aeec4f8df8be9ed58b30ae9450029fa864b1f9c6014a006"
+    }
+  },
+  "weights/planner_lora/tokenizer_config.json": {
+    "sha256": "0634746fbc082ff0d00ad5e7a7e58fd69e7159ed50b3c72c2f523a9cb73b31f1",
+    "bytes": 1193,
+    "source": {
+      "type": "tar",
+      "url": "https://github.com/CUHK-AIM-Group/UniField_plusplus/releases/download/initialization-v1/planner-initialization.tar",
+      "member": "planner_lora/tokenizer_config.json",
+      "archive_sha256": "8cd8eb421f6507a30aeec4f8df8be9ed58b30ae9450029fa864b1f9c6014a006"
+    }
+  },
+  "weights/stage1/lora_weights.pth": {
+    "sha256": "6c3486340f0040a752cca5f880bc38e78482796fd9ec0d448a8181aa844eb885",
+    "bytes": 700121317,
+    "source": {
+      "type": "tar",
+      "url": "https://github.com/CUHK-AIM-Group/UniField_plusplus/releases/download/initialization-v1/stage1-initialization.tar",
+      "member": "stage1/lora_weights.pth",
+      "archive_sha256": "cc62d8c027ac4f56a8d0a0d33b4bafab8dbf58bb0aa47ca9352b3c0fb49c6fdd"
+    }
+  }
+}
